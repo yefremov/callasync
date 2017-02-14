@@ -14,7 +14,8 @@
   ```js
   var callasync = require('callasync');
 
-  // both function fill be called on a same tick
+  // both functions fill be called on a same tick
+
   callasync(function () {
     // code
   });
