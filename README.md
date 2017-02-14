@@ -1,5 +1,9 @@
 # callasync
 
+  [![Build Status](https://travis-ci.org/yefremov/callasync.svg?branch=master)](https://travis-ci.org/yefremov/callasync)
+
+  [![Coverage Status](https://coveralls.io/repos/github/yefremov/callasync/badge.svg?branch=master)](https://coveralls.io/github/yefremov/callasync?branch=master)
+
   Essential function to group all your asynchronous function calls into
   a single queue.
 
@@ -27,10 +31,10 @@
 
 ## Running tests
 
-```
-$ npm install
-$ npm test
-```
+  ```bash
+  $ npm install
+  $ npm test
+  ```
 
 ## License
 
