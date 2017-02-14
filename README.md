@@ -17,7 +17,7 @@ $ npm install --save callasync
 ```js
 var callasync = require('callasync');
 
-// both functions `foo()` and `bar()` fill be
+// both functions `foo()` and `bar()` will be
 // called async but on a same tick
 
 callasync(function foo() {
