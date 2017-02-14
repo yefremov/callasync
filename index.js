@@ -9,13 +9,15 @@ var waiting = [];
 var waitingID = 0;
 
 var callWaiting = function () {
+  var index = -1;
+  var length = waiting.length;
   var funcs = waiting;
 
   waiting = [];
   waitingID = 0;
 
-  while (funcs.length) {
-    funcs.shift()();
+  while (++index < length) {
+    funcs[index]();
   }
 };
 
