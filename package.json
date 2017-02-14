@@ -4,7 +4,9 @@
   "description": "Group and call functions asynchronously",
   "main": "index.js",
   "scripts": {
-    "test": "tape test.js | tap-spec"
+    "test": "tape test.js | tap-spec",
+    "test-cov": "nyc npm test",
+    "report-cov": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,8 @@
   },
   "homepage": "https://github.com/yefremov/callasync#readme",
   "devDependencies": {
+    "coveralls": "^2.11.16",
+    "nyc": "^10.1.2",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.3"
   }
