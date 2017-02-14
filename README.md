@@ -1,40 +1,41 @@
 # callasync
 
-  [![Build Status](https://travis-ci.org/yefremov/callasync.svg?branch=master)](https://travis-ci.org/yefremov/callasync)
-  [![Coverage Status](https://coveralls.io/repos/github/yefremov/callasync/badge.svg?branch=master)](https://coveralls.io/github/yefremov/callasync?branch=master)
+[![Build Status](https://travis-ci.org/yefremov/callasync.svg?branch=master)](https://travis-ci.org/yefremov/callasync)
+[![Coverage Status](https://coveralls.io/repos/github/yefremov/callasync/badge.svg?branch=master)](https://coveralls.io/github/yefremov/callasync?branch=master)
 
-  Essential function to group all your asynchronous function calls into
-  a single queue.
+Essential utility function that groups and calls functions asynchronously on
+the same tick respecting order of invocation.
 
 ## Installation
 
-  ```bash
-  $ npm install --save callasync
-  ```
+```bash
+$ npm install --save callasync
+```
 
 ## Usage
 
-  ```js
-  var callasync = require('callasync');
+```js
+var callasync = require('callasync');
 
-  // both functions fill be called on a same tick
+// both functions `foo()` and `bar()` fill be
+// called async but on a same tick
 
-  callasync(function () {
-    // code
-  });
+callasync(function foo() {
+  // function body
+});
 
-  callasync(function () {
-    // code
-  });
-  ```
+callasync(function bar() {
+  // function body
+});
+```
 
 ## Running tests
 
-  ```bash
-  $ npm install
-  $ npm test
-  ```
+```bash
+$ npm install
+$ npm test
+```
 
 ## License
 
-  [MIT](LICENSE)
+[MIT](LICENSE)
