@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/yefremov/callasync.svg?branch=master)](https://travis-ci.org/yefremov/callasync)
 [![Coverage Status](https://coveralls.io/repos/github/yefremov/callasync/badge.svg?branch=master)](https://coveralls.io/github/yefremov/callasync?branch=master)
+[![npm version](https://badge.fury.io/js/callasync.svg)](https://badge.fury.io/js/callasync)
 
 Essential utility function that groups and calls functions asynchronously on
 the same tick respecting order of invocation.
