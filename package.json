@@ -1,6 +1,6 @@
 {
   "name": "callasync",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Group and call functions asynchronously",
   "main": "index.js",
   "scripts": {
@@ -8,6 +8,7 @@
     "test-cov": "nyc npm test",
     "report-cov": "nyc report --reporter=text-lcov | coveralls"
   },
+  "keywords": ["async"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yefremov/callasync.git"

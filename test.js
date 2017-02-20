@@ -1,7 +1,9 @@
 var test = require('tape');
-var callAsync = require('.');
+var callasync = require('.');
 
-test('callAsync should call `func` asynchronously', function (t) {
+test('callasync(func) should call `func` asynchronously', function (t) {
+  t.plan(4);
+
   var i = 0;
   var callback = function (n, msg) {
     return function () {
@@ -9,13 +11,8 @@ test('callAsync should call `func` asynchronously', function (t) {
     }
   };
 
-  t.plan(4);
-
   callback(1, 'should execute first')();
-
-  callAsync(callback(3, 'should execute third'));
-
-  callAsync(callback(4, 'should execute fourth'));
-
+  callasync(callback(3, 'should execute third'));
+  callasync(callback(4, 'should execute fourth'));
   callback(2, 'should execute second')();
 });

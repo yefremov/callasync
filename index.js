@@ -1,9 +1,9 @@
 
 /**
- * Expose `callAsync`.
+ * Expose `callasync`.
  */
 
-module.exports = callAsync;
+module.exports = callasync;
 
 /**
  * A queue holding functions to execute on timeout.
@@ -24,7 +24,7 @@ var waitingID = 0;
  * @type {Function}
  */
 
-var callWaiting = function () {
+var process = function () {
   var index = -1;
   var length = waiting.length;
   var funcs = waiting; // local scope copy of waiting queue
@@ -42,9 +42,9 @@ var callWaiting = function () {
  * @param {Function} func The function to delay.
  */
 
-function callAsync(func) {
+function callasync(func) {
   waiting.push(func);
   if (waitingID === 0) {
-    waitingID = setTimeout(callWaiting, 0);
+    waitingID = setTimeout(process, 0);
   }
 }

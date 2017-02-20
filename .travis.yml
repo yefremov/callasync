@@ -4,6 +4,7 @@ node_js:
   - "6.1"
   - "5.11"
   - "iojs"
+  - "node"
 script:
   - "npm run-script test-cov"
 after_success:
