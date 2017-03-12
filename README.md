@@ -11,7 +11,7 @@ the same tick respecting order of invocation.
 ## Installation
 
 ```bash
-$ npm install --save callasync
+$ npm install callasync
 ```
 
 ## API
@@ -34,7 +34,6 @@ callasync(function bar() {
 ## Running tests
 
 ```bash
-$ npm install
 $ npm test
 ```
 
